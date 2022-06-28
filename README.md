@@ -102,6 +102,7 @@ Results:
 ### EasyVM
 - Solved: 1
 - Author: Nop
+- Link: https://github.com/N0nop/ACTF-EasyVM/
 
 ## Rev
 
@@ -142,6 +143,7 @@ Results:
 ### CryptoNote
 - Solved: 2
 - Author: 4qwerty7
+- Link: https://github.com/qwerty472123/my-challenge-in-actf-2022
 
 ### RSA leak
 - Solved: 37
@@ -180,6 +182,7 @@ Results:
 ### Broken QRCode
 - Solved: 1
 - Author: TonyCrane
+- Link: https://blog.tonycrane.cc/p/12a2afd2.html
 
 ### Weird Rev
 - Solved: 2
