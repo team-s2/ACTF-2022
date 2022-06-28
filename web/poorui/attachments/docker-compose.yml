@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+    src:
+        build: ./src/
+        tty: true
+        restart: on-failure
+        ports:
+            - "8081:8081"

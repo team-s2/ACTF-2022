@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  h1= title
+  div
+    p Welcome to #{title} dApp
+    p The Provider URL is #{provider}
+    p Game Contract: 
+    p#gameContract #{contract}
+
+  div
+    button#connectButton
+  
+  div 
+    p current status:
+    div
+      span.label active account:
+      p#activeAddress
+    div
+      span.label balance:
+      p#remainBalance
+    div
+      span.label chance:
+      p#remainChance
+    div
+      button#refreshBtn
+
+  div
+    button#getAirdrop
+
+  div
+    div
+      p bet value
+      input#inputBetVal(type="text")
+    div
+      p bet mod
+      input#inputBetMod(type="text")
+    div
+      button#startBet
+  
+  div
+    p#downloadData
+    button#downloadContent
+
+  div
+    p#flagData
+    button#getFlag
+
+  script(src='/javascripts/index.js')

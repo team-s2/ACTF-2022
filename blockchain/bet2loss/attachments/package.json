@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ethereum-keystore": "^0.0.3",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "solc": "^0.8.14-fixed",
+    "web3": "^1.7.3"
+  }
+}

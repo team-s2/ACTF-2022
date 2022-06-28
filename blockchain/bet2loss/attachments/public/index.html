@@ -1,0 +1,121 @@
+<!Doctype html>
+<html class="mdl-js">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EVM</title>
+	<link href="./public/uiHelper.css" rel="stylesheet" type="text/css">
+	<link href="./public/mdl/material.indigo-blue.css" rel="stylesheet" type="text/css">
+	<script src="./public/mdl/material.js"></script>
+	<script src="https://unpkg.com/web3@1.7.4/dist/web3.min.js"></script>
+	<script src="./public/uiHelper.js"></script>
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header" id="header">
+			<div class="mdl-layout__drawer-button mouse_def" style="cursor:auto!important"><i
+					class="material-icons">explore</i></div>
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><span id="app_title">EVM</span> dApp</span>
+			</div>
+		</header>
+		<main class="mdl-layout__content page-content">
+			<ul class="mdl-list mdl-shadow--2dp" id="list">
+				<li class="mdl-list__item mdl-list__item--two-line">
+					<span class="mdl-list__item-primary-content">
+						GETH RPC Provider URL
+						<span class="mdl-list__item-sub-title selectable" id="geth_url">http://127.0.0.1:8545/</span>
+					</span>
+				</li>
+				<li class="mdl-list__item mdl-list__item--two-line">
+					<span class="mdl-list__item-primary-content">
+						Game Contract Address
+						<span class="mdl-list__item-sub-title selectable" id="game_addr">0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
+					</span>
+				</li>
+				<li class="mdl-list__item mdl-list__item--two-line">
+					<span class="mdl-list__item-primary-content">
+						Your Account Address
+						<span class="mdl-list__item-sub-title selectable" id="my_account">0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
+					</span>
+					<span class="mdl-list__item-secondary-content">
+						<button
+							class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+							id="request">
+							Request
+						</button>
+					</span>
+				</li>
+				<li class="mdl-list__item mdl-list__item--two-line">
+					<span class="mdl-list__item-primary-content">
+						Your Balance
+						<span class="mdl-list__item-sub-title"><span id="my_eth_chance" class="selectable">0</span> ether</span>
+					</span>
+					<span class="mdl-list__item-secondary-content">
+						<button
+							class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+							id="refresh">
+							Refresh
+						</button>
+					</span>
+				</li>
+				<li class="mdl-list__item mdl-list__item--two-line">
+					<span class="mdl-list__item-primary-content">
+						Your Token Balance
+						<span class="mdl-list__item-sub-title selectable" id="my_balance">0</span>
+					</span>
+					<span class="mdl-list__item-secondary-content">
+						<button
+							class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+							id="new_airdrop">
+							AIRDROP
+						</button>
+					</span>
+				</li>
+				<li class="mdl-list__item mdl-list__item--two-line">
+					<span class="mdl-list__item-primary-content">
+						Your Bet
+						<div class="mdl-textfield mdl-js-textfield" style="margin: -20px 0 -20px 5px; width: 100px;">
+							<input class="mdl-textfield__input" type="text" id="bet_value">
+							<label class="mdl-textfield__label" for="bet_value">Bet Value</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield" style="margin: -20px 0 -20px 5px; width: 100px;">
+							<input class="mdl-textfield__input" type="text" id="bet_mod">
+							<label class="mdl-textfield__label" for="bet_mod">Bet Mod</label>
+						</div>
+						<span class="mdl-list__item-sub-title">Chances: <span class="selectable" id="my_chance">0</span></span>
+					</span>
+					<span class="mdl-list__item-secondary-content">
+						
+						<button
+							class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+							id="do_bet">
+							BET
+						</button>
+					</span>
+				</li>
+				<li class="mdl-list__item mdl-list__item--two-line">
+					<span class="mdl-list__item-primary-content">
+						Your Flag
+						<span class="mdl-list__item-sub-title selectable" id="my_flag">not available</span>
+					</span>
+					<span class="mdl-list__item-secondary-content">
+						<button
+							class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+							id="check_flag">
+							CHECK
+						</button>
+					</span>
+				</li>
+			</ul>
+		</main>
+		<div id="toastDiv" class="mdl-js-snackbar mdl-snackbar">
+			<div class="mdl-snackbar__text"></div>
+			<button class="mdl-snackbar__action" type="button"></button>
+		</div>
+	</div>
+</body>
+
+</html>

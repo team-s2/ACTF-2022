@@ -1,0 +1,10 @@
+material.indigo-blue.css与原版文件的区别
+删去了.mdl-textfield--expandable .mdl-button--icon{top:16px}
+在开头@charset "UTF-8";后添加@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(/mdl/icons.woff2) format('woff2')}
+material.js与原版文件的区别
+在
+		if (registeredClass.widget) {
+          // Assign per element instance for control over API
+          element[registeredClass.className] = instance;
+        }
+后添加if(element.onUpgraded)element.onUpgraded(instance);(增加的事件)

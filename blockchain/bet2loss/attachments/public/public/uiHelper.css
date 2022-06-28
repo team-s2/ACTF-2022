@@ -1,0 +1,281 @@
+#list {
+	background-color: #fff;
+	border-radius: 2px;
+	padding: 10px;
+	border-radius: 8px;
+	transition:  all .3s ease-in-out;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+.page-content {
+	background-color: #eee;
+}
+
+.mdl-layout__header, .mdl-list__item-primary-content {
+	user-select: none;
+}
+
+.mdl-radio-red.is-checked .mdl-radio__outer-circle {
+	border-color: #ff8c8c!important;
+}
+
+.mdl-radio-red.is-checked .mdl-radio__inner-circle {
+	background-color: #ff8c8c!important;
+}
+
+.mdl-radio-yellow.is-checked .mdl-radio__outer-circle {
+	border-color: #efef50!important;
+}
+
+.mdl-radio-yellow.is-checked .mdl-radio__inner-circle {
+	background-color: #efef50!important;
+}
+
+.mdl-radio-green.is-checked .mdl-radio__outer-circle {
+	border-color: #8cff8c!important;
+}
+
+.mdl-radio-green.is-checked .mdl-radio__inner-circle {
+	background-color: #8cff8c!important;
+}
+
+.tube {
+	width: 50px;
+	height: 100px;
+	position: relative;
+	margin: 2px;
+	display: inline-block;
+}
+
+.tube>div {
+	position: absolute!important;
+	width: 40px!important;
+}
+
+.tube-1, .tube-4, .tube-7 {
+	left: 5px;
+}
+
+.tube-2, .tube-3, .tube-5, .tube-6 {
+	transform: rotate(-90deg);
+}
+
+.tube-2 {
+	left: -18px;
+	top: 25px;
+}
+
+.tube-3 {
+	left: 26px;
+	top: 25px;
+}
+
+.tube-5 {
+	left: -18px;
+	top: 73px;
+}
+
+.tube-6 {
+	left: 26px;
+	top: 73px;
+}
+
+.tube-4 {
+	top: 49px;
+}
+
+.tube-7 {
+	bottom: 0px;
+	top: auto;
+}
+
+.tube-split {
+	width: 30px;
+	display: inline-block;
+}
+
+#buttonList {
+	display: inline-block;
+}
+
+#buttonList>div {
+	margin: 2px;
+}
+
+#buttonList .material-icons {
+	font-family: inherit!important;
+}
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.mdl-switch__label {
+	left: -4px!important;
+	color: rgba(0, 0, 0, .45);
+}
+
+.mdl-switch.is-upgraded {
+	padding-left: 0!important;
+}
+
+.openList {
+	padding-bottom: 36px;
+}
+
+#copyLists label {
+	width: 45px;
+	margin-right: 2px;
+}
+
+#copyLists {
+	margin-bottom: -18px;
+}
+
+.uploadMask {
+	width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: block;
+    position: absolute;
+	background-color: #262626;
+	transition: opacity .2s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+	text-align: center;
+}
+
+.uploadingMask {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.uploadMask > span {
+	top: 50%;
+    position: relative;
+    font-size: 30px;
+    color: #eee;
+}
+
+@media screen and (max-width:550px) {
+	.tube-split {
+		width: 0;
+	}
+}
+
+#list {
+	max-width: 600px;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+body {
+	overflow: hidden;
+}
+
+*:not(dialog) {
+	margin: 0;
+	padding: 0;
+}
+
+.page-content {
+	background-color: #eee;
+}
+
+dialog {
+	width: 600px!important;
+	padding: 0;
+	height: 464px;
+	border-radius: 4px;
+	margin: 0;
+	position: absolute;
+}
+
+dialog .mdl-layout {
+	border-radius: 4px;
+}
+
+.close {
+	background-color: #3f51b5!important;
+	height: 48px!important;
+	width: 56px;
+	border-radius: 0 4px 0 0!important;
+	box-shadow: none!important;
+}
+
+.close:hover {
+	background-color: #e81123!important;
+}
+
+dialog .mdl-layout__header, dialog .mdl-layout__header-row {
+	flex-shrink: unset;
+	height: 48px!important;
+	min-height: 48px!important;
+}
+
+dialog header .mdl-layout__drawer-button {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+dialog .mdl-layout__header-row {
+	padding-right: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #1e6ca5!important;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.selectable {
+	user-select: all;
+}
+
+a:hover {
+	color: #1074bd!important;
+}
+
+a:active {
+	color: #1495f3!important;
+}
+
+#down {
+	display: none;
+}
+
+.mdl-list__item-primary-content {
+	min-width: 100px;
+}
+
+.urls {
+	width: 450px;
+}
+
+.mdl-layout__drawer-button, .mdl-layout__header {
+	cursor: default!important;
+}
+
+.mdl-layout__header, .mdl-list__item-primary-content {
+	user-select: none;
+}
+
+.mdl-list__item-primary-content>span, .mdl-list__item-secondary-content, .mdl-list__item-primary-content>a {
+	font-size: xx-small;
+}
+
+.blockTwoLine {
+	display: block!important;
+	line-height: 40px;
+}
+
+[id$="ver"], [id$="ver2"], [id$="parameter"] {
+	cursor: text!important;
+	user-select: auto!important;
+}

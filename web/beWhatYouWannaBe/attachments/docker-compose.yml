@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+    src:
+        build: ./src/
+        tty: true
+        init: true
+        ports:
+            - "10022:8000"
+        restart: on-failure
+        deploy:
+            resources:
+              limits:
+                cpus: '0.50'
+                memory: 4096M
+    mongodb:
+        build: ./mongodb/
+        tty: true
+        restart: on-failure
+        deploy:
+            resources:
+              limits:
+                cpus: '0.20'
+                memory: 1024M
