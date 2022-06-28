@@ -175,7 +175,7 @@ Results:
 - Solved: 22
 - Author: jxji
 
-### safer-telegram-bot-1
+### safer-telegram-bot-2
 - Solved: 6
 - Author: jxji
 
