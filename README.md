@@ -29,7 +29,7 @@ Results:
 - [Rev](#Rev)
     - [dropper](#dropper)
     - [kcov](#kcov)
-    - [Nagi Knows](#Nagi-Knowns)
+    - [Nagi Knows](#Nagi-Knows)
     - [Fun Tiger](#Fun-Tiger)
     - [Inflated](#Inflated)
     - [ARealBug](#ARealBug)
