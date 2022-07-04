@@ -122,10 +122,12 @@ Results:
 ### Fun Tiger
 - Solved: 0
 - Author: SGFVamll
+- Link: https://github.com/Lnkvct/CTF-for-Fun/blob/main/Challenges/FunTiger-ACTF2022/writeup.md
 
 ### Inflated
 - Solved: 1
 - Author: SGFVamll
+- Link: https://github.com/Lnkvct/CTF-for-Fun/blob/main/Challenges/Inflated-ACTF2022/writeup.md
 
 ### ARealBug
 - Solved: 0
