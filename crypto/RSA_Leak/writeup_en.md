@@ -1,0 +1,1 @@
+Firstly, using meet-in-the-middle attack(just brute force), we can easily get the rq and rq. Here, rq and rq are about $2^{24}$ and we also know $n = (a^4 + rp) ∗ (b^4 + rq) = (ab)^4 + O(a^4)​$. Based on this fact, we have $a*b=n^{1/4}$. Finally, using these two equation, we can solve the $a$ and $b$. Knowing the $p$ and $q$ -> get flag~
