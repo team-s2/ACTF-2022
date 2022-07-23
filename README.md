@@ -177,10 +177,12 @@ Results:
 ### safer-telegram-bot-1
 - Solved: 22
 - Author: jxji
+- Link: https://blog.jiejiss.com/ACTF2022-safer-tg-bot-1-2-WP/
 
 ### safer-telegram-bot-2
 - Solved: 6
 - Author: jxji
+- Link: https://blog.jiejiss.com/ACTF2022-safer-tg-bot-1-2-WP/
 
 ### Broken QRCode
 - Solved: 1
