@@ -1,4 +1,7 @@
 # ACTF-2022
+
+![AAA](./logo.png)
+
 Archive of AAA CTF 2022 (XCTF competition)
 
 The first will be qualified to the finals of the 7th Edition of XCTF.
